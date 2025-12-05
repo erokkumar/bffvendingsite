@@ -1,4 +1,4 @@
-# Brew Haven
+# Bff Company Site
 
 A modern vending/coffee application built with React and Vite, featuring a premium UI and smooth interactions.
 
