@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Bg from '../assets/back.png'
 import { motion } from 'framer-motion'
 import DemoVideo from '../assets/BFF-COFFEE -VENDING.mp4'
@@ -23,7 +23,7 @@ const About1 = () => {
         transition={{ duration: 1.5, delay: 0.3 }}
         className="text-amber-900 font-cursive text-5xl text-center mb-10"
       >
-       What We Stand For
+        What We Stand For
       </motion.h1>
 
       {/* Main Content Row */}
@@ -54,7 +54,7 @@ const About1 = () => {
             transition={{ duration: 1.5, delay: 0.4 }}
             className="text-3xl font-cursive2 text-amber-900"
           >
-       Dedicated to Exceptional Coffee and Vending Solutions
+            Dedicated to Exceptional Coffee and Vending Solutions
           </motion.h1>
 
           <motion.p
@@ -65,7 +65,7 @@ const About1 = () => {
           >
             At BFF Vending, we stand for quality, innovation, and trust. Our mission is to make premium coffee and convenient vending solutions accessible to everyone—anytime, anywhere. We believe in delivering machines that combine smart technology, durability, and user-friendly design, ensuring reliable performance every day.
 
-We are committed to offering fresh, great-tasting coffee and beverages that uplift workplaces, energize teams, and enhance everyday moments. With a focus on excellence and customer satisfaction, BFF Vending continues to push boundaries, creating solutions that are efficient, modern, and built for the future.
+            We are committed to offering fresh, great-tasting coffee and beverages that uplift workplaces, energize teams, and enhance everyday moments. With a focus on excellence and customer satisfaction, BFF Vending continues to push boundaries, creating solutions that are efficient, modern, and built for the future.
           </motion.p>
         </div>
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Logo from "../assets/logo1.jpg"
 import { Menu, X } from 'lucide-react'
 import ResponsiveMenu from './ResponsiveMenu'
@@ -26,7 +26,7 @@ const Navbar = () => {
                 {
                     open ? <X onClick={() => setOpen(false)} className='text-white w-7 h-7 md:hidden' /> : <Menu onClick={() => setOpen(true)} className='text-white w-7 h-7 md:hidden' />
                 }
-                 
+
             </div>
             <ResponsiveMenu open={open} setOpen={setOpen} />
         </div>

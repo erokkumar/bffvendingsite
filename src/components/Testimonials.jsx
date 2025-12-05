@@ -1,4 +1,4 @@
-import React from "react";
+
 import Slider from "react-slick";
 
 // LOCAL MP4 VIDEOS — Must exist in: src/assets/videos/
@@ -54,7 +54,7 @@ const Testimonials = () => {
           transition={{ duration: 1.5, delay: 0.5 }}
           className="text-center text-amber-900 text-4xl font-bold font-cursive mb-10"
         >
-         Feedback
+          Feedback
         </motion.h1>
 
         {/* Slider */}

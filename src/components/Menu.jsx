@@ -1,4 +1,4 @@
-import React from 'react'
+/* eslint-disable react/jsx-key */
 import Img1 from '../assets/machine1.png'
 import Img2 from '../assets/Machine_photo.png'
 import Img3 from '../assets/largemachine.png'
@@ -58,7 +58,7 @@ const Menu = () => {
             transition={{ duration: 1.5, delay: 0.5 }}
             className='text-4xl font-bold font-cursive text-amber-900'
           >
-           Smart Vending Machines Designed for Your Needs
+            Smart Vending Machines Designed for Your Needs
           </motion.h1>
         </div>
 

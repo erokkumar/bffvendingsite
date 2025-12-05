@@ -1,24 +1,36 @@
-import React from 'react'
+import PropTypes from 'prop-types';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const ResponsiveMenu = ({ open, setOpen }) => {
     return (
-        <div className={`${open ? "left-0" : "-left-[100%]"} fixed bottom-0 top-0 x-30 flex h-screen w-[75%] flex-col justify-between bg-amber-950 px-8 pb-6 pt-16 text-black md:hidden rounded-r-xl shadow-md transition-all`}>
-            <div>
-                <nav className='mt-12'>
-                    <ul className='flex flex-col gap-7 text-lg font-semibold text-white'>
-                        <a href="/"><li onClick={()=>setOpen(false)} className='cursor-pointer'>Home</li></a>
-                        <a href="#menu"><li onClick={()=>setOpen(false)} className='cursor-pointer'>Menu</li></a>
-                        <a href="#about"><li onClick={()=>setOpen(false)} className='cursor-pointer'>About</li></a>
-                        <a href="#testimonial"><li onClick={()=>setOpen(false)} className='cursor-pointer'>Feedback</li></a>
-                        <a href="#contact"><button onClick={()=>setOpen(false)} className='bg-amber-800 text-white hover:bg-amber-900 px-3 py-1 rounded-md'>Contact</button></a>
-                    </ul>
-                </nav>
-            </div>
-             <div className='text-white'>
-                <h1>Made with ❤️ by Akash</h1>
-             </div>
-        </div>
+        <AnimatePresence mode='wait'>
+            {
+                open && (
+                    <motion.div
+                        initial={{ opacity: 0, y: -100 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -100 }}
+                        transition={{ duration: 0.3 }}
+                        className='absolute top-20 left-0 w-full h-screen z-20'>
+                        <div className='text-xl font-semibold uppercase bg-amber-950 text-white py-10 m-6 rounded-3xl'>
+                            <ul className='flex flex-col justify-center items-center gap-10'>
+                                <a href="/"><li onClick={() => setOpen(false)} className='cursor-pointer'>Home</li></a>
+                                <a href="#menu"><li onClick={() => setOpen(false)} className='cursor-pointer'>Menu</li></a>
+                                <a href="#about"><li onClick={() => setOpen(false)} className='cursor-pointer'>About</li></a>
+                                <a href="#testimonial"><li onClick={() => setOpen(false)} className='cursor-pointer'>Feedback</li></a>
+                                <a href="#contact"><li onClick={() => setOpen(false)} className='cursor-pointer'>Contact</li></a>
+                            </ul>
+                        </div>
+                    </motion.div>
+                )
+            }
+        </AnimatePresence>
     )
 }
 
-export default ResponsiveMenu
+ResponsiveMenu.propTypes = {
+    open: PropTypes.bool.isRequired,
+    setOpen: PropTypes.func.isRequired,
+};
+
+export default ResponsiveMenu;

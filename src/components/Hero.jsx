@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import coffee from '../assets/Machine_photo.png'
 import coffee2 from '../assets/Coffee_logo.png'  // second image
 import Bean1 from '../assets/bean1.png'
@@ -47,7 +47,7 @@ const Hero = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1.2, delay: 0.6 }}
                     >
-                     BFF Vending provides smart, fully automated machines that deliver fresh drinks and snacks quickly and reliably. Designed for modern workplaces, offices, and colleges, our solutions ensure convenient, hassle-free service around the clock.
+                        BFF Vending provides smart, fully automated machines that deliver fresh drinks and snacks quickly and reliably. Designed for modern workplaces, offices, and colleges, our solutions ensure convenient, hassle-free service around the clock.
                     </motion.p>
 
                     <motion.div

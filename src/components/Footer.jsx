@@ -1,4 +1,4 @@
-import React from 'react'
+
 import FooterBg from '../assets/coffee-footer.jpg'
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
@@ -39,7 +39,7 @@ const Footer = () => {
                     <div className='py-8 px-4'>
                         <a href="#" className='font-semibold tracking-widest text-2xl sm:text-3xl font-cursive'>BFF Vending</a>
                         <p className='pt-4'>Crafted Coffee, Cozy Vibes, Unforgettable Moments – Your Perfect Espresso Escape</p>
-                       
+
                     </div>
                     {/* footer links */}
                     <div className='col-span-2 grid grid-cols-2 sm:grid-cols-3 md:pl-10'>
